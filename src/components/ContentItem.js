@@ -6,26 +6,26 @@ export default function ContentItem({
   title,
   author,
   description,
-  publishedAt,
   url,
   urlToImage,
 }) {
   return (
 
     // estructura noticia
-    <Grid item xs={12} md={4}>
+    <Grid item xs={12} sm={6} md={4} xl={3}>
       <section className="content-item">
+        <a href={url}>
         <img className="content-img" src={urlToImage} alt={urlToImage} />
     <div className="content-text">
         <h3>
-          <a href={url}>{title}</a>
+          {title}
         </h3>
         <div className="content-detail">
         <p>{author}</p>
-        <p>{publishedAt}</p>
         </div>
-        <p>{description}</p>
+        <p className="content-description">{description}</p>
         </div>
+      </a>
       </section>
     </Grid>
   );

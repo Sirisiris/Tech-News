@@ -1,9 +1,11 @@
 import React from "react";
+import logo from "../media/tn-logo.png";
+import "../components/navbar.css"
 
 export default function NavBar() {
-    return (
-        <nav style={{border: "1px solid red", height: "4rem", width: "100%", position: "fixed" }}>
-            
-        </nav>
-    )
+  return (
+    <nav>
+        <img src={logo} alt=""/>
+    </nav>
+  );
 }
