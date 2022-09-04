@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import ContentItem from "../components/ContentItem";
 
 export default function ContentList() {
+
   //consumo de la Api
+  
   const [articles, setArticles] = useState([]);
   useEffect(() => {
     const getArticles = async () => {
@@ -15,5 +18,23 @@ export default function ContentList() {
     getArticles();
   }, []);
 
-  return <div></div>;
+  return (
+
+    // mapeado + props
+
+    <section>
+      {articles.map((article) => {
+        return (
+          <ContentItem
+            title={article.title}
+            author={article.author}
+            description={article.description}
+            publishedAt={article.publishedAt}
+            url={article.url}
+            urlToImage={article.urlToImage}
+          />
+        );
+      })}
+    </section>
+  );
 }
