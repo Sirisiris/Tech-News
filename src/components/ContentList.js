@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import ContentItem from "../components/ContentItem";
+import { Grid } from "@mui/material";
 
 export default function ContentList() {
 
   //consumo de la Api
-  
+
   const [articles, setArticles] = useState([]);
   useEffect(() => {
     const getArticles = async () => {
@@ -22,7 +23,7 @@ export default function ContentList() {
 
     // mapeado + props
 
-    <section>
+    <Grid container spacing={2} style={{paddingTop: "3rem"}}>
       {articles.map((article) => {
         return (
           <ContentItem
@@ -35,6 +36,6 @@ export default function ContentList() {
           />
         );
       })}
-    </section>
+    </Grid>
   );
 }
