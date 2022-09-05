@@ -2,14 +2,11 @@
 
 ¡Tu lector de notícias Tech!
 
-Aquí se aglutinan las últimas noticias del sector tecnológico de diferentes portales, para la comodidad del usuario.
-
 ![Logo](https://i.ibb.co/BgRtnF9/tn-logo.png)
 
-**📌 https://sirisiris.github.io/Tech-News**
+Aquí se aglutinan las últimas noticias del sector tecnológico de diferentes portales, para la comodidad del usuario.
 
-**Puedes visualizar la aplicación desde esta Github-Page para más comodidad :)**
-
+![Preview](https://media.giphy.com/media/zwl37cKliPZIWTcf8g/giphy.gif)
 
 ## 🔌Tecnologías utilizadas
 
