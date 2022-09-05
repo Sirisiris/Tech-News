@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: 0;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
 }
 
 .App {
   height: 100%;
-  background: rgb(38,38,38);
-  background: linear-gradient(180deg, rgba(38,38,38,1) 0%, rgba(55,52,52,1) 88%);
+  min-height: 110vh;
+  background: rgb(248, 252, 238);
 }
