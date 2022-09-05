@@ -5,7 +5,9 @@ import { Grid } from "@mui/material";
 export default function ContentList({articles}) {
 
   return (
-    // mapeado + props
+
+    // Mapeado + Props
+    
     <Grid container spacing={2} style={{paddingTop: "6rem"}}>
       {articles.map((article) => {
         return (

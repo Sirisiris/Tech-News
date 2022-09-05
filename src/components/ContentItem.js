@@ -12,7 +12,7 @@ export default function ContentItem({
   source,
 }) {
   return (
-    // estructura noticia
+    // Estructura Noticia
     <Grid item xs={12} sm={6} md={4} xl={3}>
       <Container className="content-item">
         <a href={url}>
